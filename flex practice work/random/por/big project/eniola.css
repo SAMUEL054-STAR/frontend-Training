@@ -1,0 +1,44 @@
+.nav-bar {
+  background-color: #1a1a2e;
+  height: 500px;
+  width: 100%;
+}
+ 
+.nav-links a {
+font-size: 25px;
+justify-content: space-evenly;
+text-decoration: none;
+color: beige;
+text-align: right;
+
+}
+.nav-logo{
+  color: coral;
+  text-decoration: none;
+  font-size: 50px;
+}
+.cta{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  gap: 200px;
+}
+.hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cir{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.css{
+  width: 100px;
+  height: 50px;
+}

@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 25px;
+  font-family: Arial, sans-serif;
+  background: rgb(2, 2, 66);
+  color: white;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: rgb(16, 16, 46);
+  padding: 22px;
+  border-radius: 18px;
+  border: 1px solid rgb(89, 89, 129);
+}
+
+.project {
+  display: inline-block;
+  background: rgb(0, 0, 14);
+  color: aquamarine;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 22px 0 10px;
+}
+
+.text {
+  color: rgb(78, 78, 145);
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px;
+  border: 2px solid rgb(60, 60, 131);
+  border-radius: 14px;
+  background: rgb(8, 8, 54);
+  color: white;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+button {
+  padding: 15px;
+  border: 1px solid #2a2d53;
+  border-radius: 12px;
+  background: #06071b;
+  color: #cfd3f7;
+  font-size: 18px;
+}
+
+button:hover {
+  background: #1b2045;
+}
+
+.result-box {
+  margin-top: 20px;
+  background: #06071b;
+  border: 1px solid #2a2d53;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.result-title {
+  color: #7d82a8;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.result {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #06071b;
+  border: 1px solid #2a2d53;
+  border-radius: 14px;
+  padding: 22px;
+  text-align: center;
+}
+
+.card h2 {
+  color: aquamarine;
+  font-size: 40px;
+  margin: 0;
+}
+
+.card p {
+  color: grey;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.info-box {
+  margin-top: 22px;
+  background: rgb(27, 27, 44);
+  border: 1px solid rgb(38, 66, 38);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.info-box h2 {
+  color: aquamarine;
+  margin-top: 0;
+}
+
+.info-box p {
+  color: rgb(246, 228, 211);
+  line-height: 1.6;
+}
+
+
+
+code {
+  color: #27d39b;
+  font-size: 16px;
+}

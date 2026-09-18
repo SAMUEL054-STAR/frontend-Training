@@ -1,0 +1,272 @@
+
+
+body {
+    background: #05051a;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 30px ;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    background: rgb(18, 18, 54);
+    border-radius: 25px;
+    padding: 30px 20px;
+}
+
+.project{
+    display: inline-block;
+    padding: 8px 20px;
+    border: 2px solid rgb(238, 169, 238);
+    border-radius: 30px;
+    color: rgb(238, 169, 238);
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    color: #b7bdd8;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.password-box {
+    display: flex;
+    background: #05051a;
+    border: 2px solid rgb(17, 17, 54);
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.password-box input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 18px;
+    font-size: 20px;
+    outline: none;
+}
+
+.password-box button {
+    width: 60px;
+    border: none;
+    background: purple;
+    color: white;
+    font-size: 20px;
+    
+}
+
+.strength-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.bars {
+    display: flex;
+    gap: 8px;
+    flex: 1;
+}
+
+.bars span {
+    height: 8px;
+    flex: 1;
+    background: #2d315f;
+    border-radius: 10px;
+}
+
+#strength-text {
+    color: #43d89e;
+    font-weight: bold;
+}
+
+.rules {
+    background: #040415;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.rule {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.rule:last-child {
+    margin-bottom: 0;
+}
+
+.rule span {
+    color: #6f52ff;
+    font-size: 22px;
+}
+
+.rule p {
+    color: #d9def5;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.score span {
+    color: #c7cbe5;
+}
+
+.score-bar {
+    flex: 1;
+    height: 10px;
+    background: #1f2145;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.fill {
+    width: 0%;
+    height: 100%;
+    background: #43d89e;
+    border-radius: 20px;
+}
+
+#score-text {
+    color: #cba5ff;
+}
+
+.generator {
+    background: #040415;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.generator h3 {
+    color: #b995ff;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.options label {
+    color: #d8dcf5;
+}
+
+.options input {
+    accent-color: rgb(238, 169, 238);
+}
+
+.generate-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.generate-controls input {
+    flex: 1;
+    accent-color: rgb(238, 169, 238);
+}
+
+.generate-controls span {
+    color: rgb(238, 169, 238);
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#generate-btn {
+    background: rgb(238, 169, 238);
+    color: black;
+    border: none;
+    font-weight: bold;
+}
+
+#copy-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid #2b2f5f;
+}
+
+.generated-password {
+    background: #181b3b;
+    border-radius: 12px;
+    padding: 18px;
+    word-break: break-all;
+    color: rgb(238, 169, 238);
+}
+
+.codes{
+    background: rgb(45, 45, 90);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.codes h3 {
+    color: rgb(238, 169, 238);
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.code {
+    background: rgb(7, 7, 36);
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.code code {
+    color: rgb(238, 169, 238);
+    display: block;
+    margin-bottom: 6px;
+}
+
+.code p {
+    color: rgb(180, 180, 243);
+    font-size: 14px;
+}
+
+.note {
+    color: rgb(172, 172, 238);
+    
+    margin-top: 20px;
+}
+
+.note code {
+    background: rgb(7, 7, 36);
+    padding: 3px;
+    border-radius: 5px;
+    color: rgb(238, 169, 238);
+}
+

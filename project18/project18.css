@@ -1,0 +1,248 @@
+
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background: rgb(7, 7, 20);
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+    padding: 50px;
+    background: rgb(15, 15, 60);
+    border: 1px solid rgb(22, 22, 66);
+    border-radius: 22px;
+    
+}
+
+
+
+.project {
+  color: greenyellow;
+  font-weight: bold;
+  width: 100px;
+  height: 20px;
+  background-color: rgb(13, 13, 41);
+  text-align: center;
+  border-radius: 15px;
+  border: 5px solid green;
+}
+
+h1 {
+    margin-top: 35px;
+    margin-bottom: 30px;
+    font-size: 38px;
+}
+
+/* DESCRIPTION */
+
+.text {
+    color: #8586a5;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* INPUTS */
+
+.inputs {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.inputs div {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #777894;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+input {
+    width: 100%;
+    padding: 18px;
+    background: #0d0d16;
+    border: 2px solid #2b2c49;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #3bd1a5;
+}
+
+/* CALCULATE BUTTON */
+
+.calculate {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    background: #3bd1a5;
+    color: #080b0d;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.calculate:hover {
+    opacity: 0.9;
+}
+
+/* RESULT BOX */
+
+.result {
+    margin-top: 28px;
+    background: #0d0d16;
+    border: 2px solid #292a46;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* TABS */
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #292a46;
+}
+
+.tabs button {
+    width: 50%;
+    padding: 22px 10px;
+    border: none;
+    background: transparent;
+    color: #777894;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.tabs .simple {
+    color: #3bd1a5;
+    border-bottom: 3px solid #3bd1a5;
+}
+
+.tabs button:hover {
+    color: #3bd1a5;
+}
+
+/* DETAILS */
+
+.details {
+    padding: 25px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #202136;
+}
+
+.row p:first-child {
+    color: #8586a5;
+    font-size: 17px;
+}
+
+.row p:last-child {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.interestResult,
+.totalResult,
+.year1,
+.year2 {
+    color: #3bd1a5;
+}
+
+.totalResult {
+    font-size: 25px !important;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #292a46;
+}
+
+/* BREAKDOWN */
+
+.breakdown {
+    padding: 20px 25px 25px;
+    border-top: 1px solid #292a46;
+}
+
+.breakdown h3 {
+    color: #777894;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.breakdown .row p {
+    font-size: 15px;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    .container {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .inputs {
+        flex-direction: column;
+    }
+
+    .tabs button {
+        font-size: 14px;
+    }
+}
+
+.formula {
+  margin-top: 35px;
+  padding: 30px;
+  background-color: rgb(10, 10, 60);
+  border: 2px solid #293b4a;
+  border-radius: 15px;
+}
+
+.formula h2 {
+  color: aqua;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.formula h2 {
+  color: turquoise;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.formula p {
+  color: lime;
+  font-size: 18px;
+}
+
+.formula strong {
+  color: white;
+}

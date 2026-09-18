@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 26 — Dice Roller</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <span class="project-label">Project 26</span>
+      <h1 class="title">Dice Roller</h1>
+      <p class="subtitle">
+        Choose how many dice and what type. Roll them and see the results.
+      </p>
+
+      <!-- Dice controls -->
+      <div class="controls-row">
+        <div class="control-group">
+          <label class="ctrl-label">Number of Dice</label>
+          <div class="stepper">
+            <button class="step-btn" id="dice-minus">−</button>
+            <span id="dice-count" class="step-val">2</span>
+            <button class="step-btn" id="dice-plus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <button id="roll-btn" class="btn">Roll Dice 🎲</button>
+
+      <!-- Dice display -->
+      <div id="dice-display" class="dice-display"></div>
+
+      <!-- Result summary -->
+      <div id="result-summary" class="result-summary hidden">
+        <div class="sum-item">
+          <span id="r-sum" class="sum-num">0</span
+          ><span class="sum-label">Total</span>
+        </div>
+        <div class="sum-item">
+          <span id="r-avg" class="sum-num">0</span
+          ><span class="sum-label">Average</span>
+        </div>
+        <div class="sum-item">
+          <span id="r-min" class="sum-num">0</span
+          ><span class="sum-label">Lowest</span>
+        </div>
+        <div class="sum-item">
+          <span id="r-max" class="sum-num">0</span
+          ><span class="sum-label">Highest</span>
+        </div>
+      </div>
+
+      <!-- Roll history -->
+      <div class="history-section">
+        <div class="hist-header">
+          <span class="hist-title">Roll History</span>
+          <button id="clear-hist" class="btn-sm">Clear</button>
+        </div>
+        <div id="roll-history" class="roll-history">
+          <p class="hist-empty">No rolls yet...</p>
+        </div>
+      </div>
+    </div>
+<script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Project 35 — To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- =====================================================
+         PROJECT 35 — TO-DO LIST
+         CONCEPT: The most important Tier 4 project.
+                  Create, Read, Update, Delete (CRUD) on the DOM.
+         =====================================================
+
+         WHAT STUDENTS LEARN:
+         - Creating NEW HTML elements from JavaScript
+         - Appending them to the page with appendChild()
+         - Deleting elements with element.remove()
+         - Toggling a "done" state on an item
+         - Filtering the list (All / Active / Completed)
+         - Counting items and updating a summary
+         - This is how EVERY list-based app works
+    ===================================================== -->
+
+    <div class="card">
+      <span class="project-label">Project 35</span>
+      <h1 class="title">To-Do List</h1>
+      <p class="subtitle">
+        The classic beginner project. Add tasks, mark them done,
+        delete them. This teaches CREATE, UPDATE, and DELETE on the DOM.
+      </p>
+
+      <!-- Add task -->
+      <div class="add-row">
+        <input
+          type="text"
+          id="task-input"
+          class="text-input"
+          placeholder="Add a new task..."
+          maxlength="80"
+        />
+        <button id="add-btn" class="btn">Add</button>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+        <div class="linethrough"></div>
+      </div>
+
+      <!-- Summary bar -->
+      <div class="summary-bar">
+        <span id="summary-text" class="summary-text">0 tasks</span>
+        <button id="clear-completed-btn" class="btn-link">Clear completed</button>
+      </div>
+
+      <!-- Task list -->
+      <ul id="task-list" class="task-list">
+        <li class="empty-msg">No tasks yet. Add one above!</li>
+      </ul>
+
+      <div class="explain-box">
+        <p class="explain-title">The KEY new skill — creating elements</p>
+        <p class="explain-text">
+          <code>document.createElement("li")</code> — creates a new &lt;li&gt; in memory.<br/>
+          <code>element.innerHTML = "..."</code> — puts content inside it.<br/>
+          <code>list.appendChild(element)</code> — adds it to the page.<br/>
+          <code>element.remove()</code> — deletes it from the page.<br/><br/>
+          This is how every dynamic list in the real world is built.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

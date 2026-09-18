@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="project17.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <p class="project">PROJECT 14</p>
+
+        <h1>Tip Calculator</h1>
+
+        <p>
+            Enter the bill amount, choose a tip percentage,
+            and split between people.
+        </p>
+
+        <div class="Amount">Bill Amount (₦)</div>
+
+        <input
+            type="number" 
+            class="bill" 
+            placeholder="Enter Amount"
+        >
+
+        <label>Tip Percentage</label>
+
+        <div class="tips">
+            <button class="tip">5%</button>
+            <button class="tip">10%</button>
+            <button class="tip">15%</button>
+            <button class="tip">20%</button>
+            <button class="tip">25%</button>
+        </div>
+
+        <div>Number of People</div>
+
+        <div class="people">
+
+            <button class="minus">-</button>
+
+            <span class="number">1</span>
+
+            <button class="plus">+</button>
+
+        </div>
+
+        <button class="calculate">
+            Calculate
+        </button>
+
+        <div class="result">
+
+            <p>
+                Bill
+                <span class="bill-result">₦0.00</span>
+            </p>
+
+            <p>
+                Tip
+                <span class="tip-result">₦0.00</span>
+            </p>
+
+            <p>
+                Total
+                <span class="total-result">₦0.00</span>
+            </p>
+
+            <div class="person">
+
+                <span>Each Person Pays</span>
+
+                <span class="person-result">
+                    ₦0.00
+                </span>
+
+            </div>
+
+        </div>
+<div class="concepts">
+
+            <h2>KEY CONCEPTS</h2>
+
+            <p>
+                <code>parseFloat()</code> —
+                converts string to decimal number
+                (e.g. "50.5" → 50.5)
+            </p>
+
+            <p>
+                <code>.toFixed(2)</code> —
+                rounds to 2 decimal places for money display
+            </p>
+
+            <p>
+                Tip amount = bill  (tipPercent / 100)
+            </p>
+        </div>
+    </div>
+<script src="project17.js"></script>
+</body>
+
+</html>

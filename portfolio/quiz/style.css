@@ -1,0 +1,62 @@
+/* PROJECT 32 — QUIZ APP — style.css */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { min-height: 100vh; background-color: #0f0f1a; display: flex; align-items: center; justify-content: center; font-family: 'Segoe UI', system-ui, sans-serif; padding: 24px; }
+.card { background-color: #1a1a2e; border: 1px solid #2a2a45; border-radius: 16px; padding: 40px 36px; width: 100%; max-width: 520px; display: flex; flex-direction: column; gap: 20px; }
+.project-label { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #cba6f7; background-color: rgba(203,166,247,0.12); border: 1px solid #cba6f7; border-radius: 20px; padding: 4px 14px; width: fit-content; }
+.title { font-size: 28px; font-weight: 700; color: #e8e8f0; letter-spacing: -0.5px; }
+
+/* Progress */
+.progress-area { display: flex; flex-direction: column; gap: 10px; }
+.prog-row { display: flex; justify-content: space-between; align-items: center; }
+.q-num   { font-size: 13px; font-weight: 600; color: #7a7a9a; }
+.q-score { font-size: 13px; font-weight: 700; color: #cba6f7; font-family: 'Courier New', monospace; }
+.prog-track { height: 6px; background-color: #0d0d1a; border-radius: 99px; overflow: hidden; border: 1px solid #2a2a45; }
+.prog-bar   { height: 100%; width: 0%; background-color: #cba6f7; border-radius: 99px; transition: width 0.4s ease; }
+
+/* Question area */
+.question-area { display: flex; flex-direction: column; gap: 16px; }
+.question-text { font-size: 18px; font-weight: 600; color: #e8e8f0; line-height: 1.5; background-color: #0d0d1a; border: 2px solid #2a2a45; border-radius: 12px; padding: 20px; min-height: 80px; }
+
+/* Options grid */
+.options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.option-btn {
+  font-family: inherit; font-size: 14px; font-weight: 600;
+  padding: 14px 12px; border-radius: 10px;
+  background-color: #0d0d1a; border: 2px solid #2a2a45;
+  color: #e8e8f0; cursor: pointer; text-align: left;
+  transition: all 0.2s; line-height: 1.4;
+}
+.option-btn:hover:not(:disabled) { border-color: #cba6f7; color: #cba6f7; }
+.option-btn.correct  { border-color: #3ecfa0; background-color: rgba(62,207,160,0.12); color: #3ecfa0; }
+.option-btn.wrong    { border-color: #f26b6b; background-color: rgba(242,107,107,0.12); color: #f26b6b; }
+.option-btn:disabled { cursor: not-allowed; }
+
+.q-feedback { font-size: 15px; font-weight: 700; text-align: center; min-height: 22px; }
+.q-feedback.correct { color: #3ecfa0; }
+.q-feedback.wrong   { color: #f26b6b; }
+
+/* Buttons */
+.btn { font-family: inherit; font-size: 15px; font-weight: 700; padding: 14px 24px; border-radius: 10px; border: none; background-color: #cba6f7; color: #000; cursor: pointer; transition: opacity 0.2s, transform 0.1s; }
+.btn:hover { opacity: 0.85; } .btn:active { transform: scale(0.97); }
+.btn-start { background-color: #3ecfa0; color: #000; }
+.hidden { display: none; }
+
+/* Results */
+.results-screen { background-color: #0d0d1a; border: 2px solid #2a2a45; border-radius: 14px; padding: 28px 24px; display: flex; flex-direction: column; gap: 16px; animation: slideDown 0.3s ease; }
+@keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+.results-title { font-size: 20px; font-weight: 700; color: #e8e8f0; text-align: center; }
+.results-score { font-size: 48px; font-weight: 700; color: #cba6f7; text-align: center; font-family: 'Courier New', monospace; }
+.results-msg   { font-size: 15px; color: #7a7a9a; text-align: center; line-height: 1.6; }
+.results-breakdown { display: flex; flex-direction: column; gap: 8px; }
+.breakdown-item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border-radius: 8px; font-size: 13px; line-height: 1.4; }
+.breakdown-item.correct-ans { background-color: rgba(62,207,160,0.08); border: 1px solid rgba(62,207,160,0.2); }
+.breakdown-item.wrong-ans   { background-color: rgba(242,107,107,0.08); border: 1px solid rgba(242,107,107,0.2); }
+.breakdown-icon { font-size: 14px; flex-shrink: 0; }
+.breakdown-text { color: #7a7a9a; }
+.breakdown-text strong { color: #e8e8f0; }
+
+/* Explain */
+.explain-box { background-color: rgba(203,166,247,0.06); border: 1px solid rgba(203,166,247,0.2); border-radius: 10px; padding: 16px 18px; display: flex; flex-direction: column; gap: 8px; }
+.explain-title { font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #cba6f7; }
+.explain-text  { font-size: 13px; color: #7a7a9a; line-height: 1.9; }
+code { background-color: #0d0d1a; color: #cba6f7; padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace; font-size: 12px; }

@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.portfolio {
+  width: 800px;
+  height: 700px;
+  background-color: #fdedb5;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid green;
+  color: coral;
+}
+ 
+.nav-bar a {
+  border: 3px solid red;
+  text-decoration: none;
+  color: coral;
+  font-size: 30px;
+}
+ 
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid blue;
+  width: 100%;
+  height: 50px;
+  background: #fdedb5;
+  gap: 20px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+.about p {
+    color: blue;
+    font-size: 16px;
+}
+ 
+
+ 

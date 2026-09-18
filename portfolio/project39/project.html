@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Project 40 — Contact Book</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- PROJECT 40 — SIMPLE CONTACT BOOK
+         CONCEPT: Multi-field objects + search + alphabet grouping
+         WHAT STUDENTS LEARN:
+         - Objects with many properties (name, phone, email, category)
+         - Grouping items alphabetically using object as a map
+         - Live multi-field search
+         - Avatar initials generated from name
+    -->
+    <div class="card">
+      <span class="project-label">Project 40</span>
+      <h1 class="title">Contact Book</h1>
+      <p class="subtitle">A mini address book. Add contacts, search instantly, and see them grouped by first letter.</p>
+
+      <!-- Add form -->
+      <div class="add-section">
+        <div class="form-grid">
+          <input type="text"  id="c-name"  class="text-input" placeholder="Full name *"/>
+          <input type="tel"   id="c-phone" class="text-input" placeholder="Phone number"/>
+          <input type="email" id="c-email" class="text-input" placeholder="Email address"/>
+          <select id="c-cat" class="select-input">
+            <option value="personal">👤 Personal</option>
+            <option value="work">💼 Work</option>
+            <option value="family">👨‍👩‍👧 Family</option>
+            <option value="other">📋 Other</option>
+          </select>
+        </div>
+        <button id="add-btn" class="btn">Add Contact</button>
+      </div>
+
+      <!-- Search -->
+      <input type="text" id="search-input" class="text-input" placeholder="🔍 Search contacts..."/>
+
+      <!-- Stats -->
+      <div class="stats-row">
+        <span id="contact-count" class="stat-pill">0 contacts</span>
+      </div>
+
+      <!-- Contact list -->
+      <div id="contact-list" class="contact-list">
+        <p class="empty-msg">Add your first contact above!</p>
+      </div>
+
+      <div class="explain-box">
+        <p class="explain-title">Alphabet grouping technique</p>
+        <p class="explain-text">
+          To group by first letter, we create an object where each key is a letter:<br/>
+          <code>{ "A": [contacts...], "B": [contacts...], ... }</code><br/><br/>
+          We loop through sorted contacts, get <code>name[0].toUpperCase()</code>,
+          and push each contact into the right letter bucket.
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days to Birthday</title>
+    <link rel="stylesheet" href="project19.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <p class="project">PROJECT 20</p>
+
+        <h1>Days to Birthday</h1>
+
+        <p class="description">
+            Enter your birthday. JavaScript calculates exactly how many days
+            until your next one.
+        </p>
+
+        <div class="input">
+
+            <div>
+                <p>MONTH</p>
+
+                <select class="month">
+                    <option value="0">January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                    <option value="4">May</option>
+                    <option value="5">June</option>
+                    <option value="6">July</option>
+                    <option value="7">August</option>
+                    <option value="8">September</option>
+                    <option value="9">October</option>
+                    <option value="10">November</option>
+                    <option value="11">December</option>
+                </select>
+            </div>
+
+            <div>
+                <p>DAY</p>
+                <input type="number" class="day" placeholder="e.g. 15">
+            </div>
+
+        </div>
+
+        <button class="calculate">Find My Birthday 🎂</button>
+
+        <div class="result">
+
+            <h2 class="days">0</h2>
+
+            <p class="days-text">DAYS TO GO</p>
+
+            <h3 class="birthday">January 20th</h3>
+
+            <p class="message">
+                Your birthday is in 0 days. That's 0 weeks and 0 days.
+            </p>
+
+            <hr>
+
+            <div class="details">
+
+                <table>
+                    <tr>
+                        <td>Birthday year</td>
+                        <td class="year">0000</td>
+                    </tr>
+
+                    <tr>
+                        <td>Days in hours</td>
+                        <td class="hours">0 hours</td>
+                    </tr>
+
+                    <tr>
+                        <td>Day of the week</td>
+                        <td class="week">Wednesday</td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+
+        <div class="info">
+
+            <h3>DATE ARITHMETIC IN JAVASCRIPT</h3>
+
+            <p>
+                <code>new Date()</code> — today's date and time right now.
+            </p>
+
+            <p>
+                <code>new Date(year, month, day)</code> — a specific date.
+            </p>
+
+            <p>
+                Note: months are 0-indexed
+                (January = 0, December = 11).
+            </p>
+
+            <br>
+
+            <p>
+                Subtracting two dates gives <strong>milliseconds.</strong>
+            </p>
+
+            <p>
+                Divide by 1000 × 60 × 60 × 24 to get days.
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="project19.js"></script>
+
+</body>
+</html>

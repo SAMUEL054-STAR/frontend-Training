@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+  </head>
+  <body>
+
+    <h1>Forms</h1>
+
+    <!-- A form collects information from the user -->
+    <!-- action: where to send the data (we leave it empty for now) -->
+    <!-- method: how to send it — "post" for sensitive data, "get" for searches -->
+    <form action="" method="post">
+
+      <!-- TEXT INPUT -->
+      <!-- The "for" on label must match the "id" on the input — links them together -->
+      <label for="name">Full name</label>
+      <input type="text" id="name" name="name" placeholder="e.g. Amara Okafor" required>
+
+      <!-- EMAIL INPUT: browser auto-validates the format -->
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="email" placeholder="e.g. amara@email.com" required>
+
+      <!-- TEXTAREA: multi-line text input -->
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+
+      <!-- SELECT DROPDOWN -->
+      <label for="topic">Topic</label>
+      <select id="topic" name="topic">
+        <option value="">-- Choose a topic --</option>
+        <option value="work">Work enquiry</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- RADIO BUTTONS: pick one from a group -->
+      <!-- All radios in the same group share the same "name" -->
+      <p>How did you find me?</p>
+      <label>
+        <input type="radio" name="source" value="google"> Google
+      </label>
+      <label>
+        <input type="radio" name="source" value="social"> Social media
+      </label>
+      <label>
+        <input type="radio" name="source" value="friend"> A friend
+      </label>
+
+      <!-- CHECKBOX: tick one or more -->
+      <label>
+        <input type="checkbox" name="newsletter" value="yes"> Subscribe to my newsletter
+      </label>
+
+      <!-- SUBMIT BUTTON -->
+      <button type="submit">Send message</button>
+
+    </form>
+
+    <!-- PRACTICE TASK:
+      Build your own contact form from scratch (new file). It must include:
+      1. A text input for the user's name (with label)
+      2. An email input (with label)
+      3. A textarea for a message (with label)
+      4. A submit button that says "Send"
+
+      Bonus:
+      5. Add a dropdown asking "What are you contacting me about?"
+         with at least 3 options
+      6. Add a checkbox that says "I agree to be contacted"
+    -->
+
+  </body>
+</html>

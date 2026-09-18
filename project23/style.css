@@ -1,0 +1,33 @@
+/* PROJECT 22 — WORD COUNTER — style.css */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { min-height: 100vh; background-color: #0f0f1a; display: flex; align-items: center; justify-content: center; font-family: 'Segoe UI', system-ui, sans-serif; padding: 24px; }
+.card { background-color: #1a1a2e; border: 1px solid #2a2a45; border-radius: 16px; padding: 40px 36px; width: 100%; max-width: 560px; display: flex; flex-direction: column; gap: 20px; }
+.project-label { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #f5a623; background-color: rgba(245,166,35,0.12); border: 1px solid #f5a623; border-radius: 20px; padding: 4px 14px; width: fit-content; }
+.title    { font-size: 28px; font-weight: 700; color: #e8e8f0; letter-spacing: -0.5px; }
+.subtitle { font-size: 14px; color: #7a7a9a; line-height: 1.6; }
+/* Textarea */
+.textarea-wrapper { background-color: #0d0d1a; border: 2px solid #2a2a45; border-radius: 12px; overflow: hidden; transition: border-color 0.2s; }
+.textarea-wrapper:focus-within { border-color: #3ecfa0; }
+.text-area { width: 100%; background: transparent; border: none; outline: none; resize: none; color: #e8e8f0; font-family: inherit; font-size: 14px; padding: 16px; line-height: 1.7; }
+.text-area::placeholder { color: #3a3a5a; }
+.toolbar { display: flex; gap: 0; border-top: 1px solid #2a2a45; }
+.tool-btn { flex: 1; font-family: inherit; font-size: 12px; font-weight: 600; padding: 10px; background: none; border: none; border-right: 1px solid #2a2a45; color: #5a5a7a; cursor: pointer; transition: all 0.2s; }
+.tool-btn:last-child { border-right: none; }
+.tool-btn:hover { background-color: rgba(62,207,160,0.08); color: #3ecfa0; }
+/* Stats grid */
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.stat-card { background-color: #0d0d1a; border: 1px solid #2a2a45; border-radius: 10px; padding: 14px 10px; text-align: center; display: flex; flex-direction: column; gap: 4px; }
+.stat-num   { font-size: 22px; font-weight: 700; color: #3ecfa0; font-family: 'Courier New', monospace; min-height: 28px; }
+.stat-label { font-size: 10px; color: #5a5a7a; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1.3; }
+/* Common words */
+.section-title { font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #5a5a7a; }
+.common-words  { display: flex; flex-wrap: wrap; gap: 8px; min-height: 36px; }
+.empty-msg     { font-size: 13px; color: #3a3a5a; font-style: italic; }
+.word-chip { display: flex; align-items: center; gap: 6px; background-color: #0d0d1a; border: 1px solid #2a2a45; border-radius: 20px; padding: 5px 12px; }
+.word-text  { font-size: 13px; color: #e8e8f0; }
+.word-count { font-size: 11px; color: #3ecfa0; font-family: 'Courier New', monospace; font-weight: 700; background-color: rgba(62,207,160,0.1); padding: 1px 6px; border-radius: 10px; }
+/* Explain */
+.explain-box { background-color: rgba(62,207,160,0.06); border: 1px solid rgba(62,207,160,0.2); border-radius: 10px; padding: 16px 18px; display: flex; flex-direction: column; gap: 8px; }
+.explain-title { font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #3ecfa0; }
+.explain-text  { font-size: 13px; color: #7a7a9a; line-height: 1.9; }
+code { background-color: #0d0d1a; color: #3ecfa0; padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace; font-size: 12px; }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Project 27 — Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- PROJECT 27 — ROCK PAPER SCISSORS
+         CONCEPT: Array of choices + comparison logic + score
+         WHAT STUDENTS LEARN:
+         - Storing choices in an array and picking one randomly
+         - Comparing two values with multiple if/else conditions
+         - Win/lose/draw logic
+         - Score tracking across multiple rounds
+    -->
+    <div class="card">
+      <span class="project-label">Project 27</span>
+      <h1 class="title">Rock Paper Scissors</h1>
+      <p class="subtitle">Pick your move. JavaScript picks one randomly. Best of anything — just keep playing!</p>
+
+      <!-- Score board -->
+      <div class="scoreboard">
+        <div class="score-col">
+          <span class="score-name">You</span>
+          <span id="player-score" class="score-num">0</span>
+        </div>
+        <div class="score-col draws">
+          <span class="score-name">Draws</span>
+          <span id="draw-score" class="score-num">0</span>
+        </div>
+        <div class="score-col">
+          <span class="score-name">Computer</span>
+          <span id="cpu-score" class="score-num">0</span>
+        </div>
+      </div>
+
+      <!-- Arena -->
+      <div class="arena">
+        <div class="arena-side">
+          <p class="arena-label">You</p>
+          <div id="player-choice" class="arena-choice">❓</div>
+        </div>
+        <div class="arena-vs">VS</div>
+        <div class="arena-side">
+          <p class="arena-label">Computer</p>
+          <div id="cpu-choice" class="arena-choice">❓</div>
+        </div>
+      </div>
+
+      <!-- Result -->
+      <div id="result-box" class="result-box">
+        <p id="result-text" class="result-text">Choose your move below</p>
+      </div>
+
+      <!-- Move buttons -->
+      <div class="moves-row">
+        <button class="move-btn" data-move="rock">🪨<span>Rock</span></button>
+        <button class="move-btn" data-move="paper">📄<span>Paper</span></button>
+        <button class="move-btn" data-move="scissors">✂️<span>Scissors</span></button>
+      </div>
+
+      <!-- Round history -->
+      <div class="round-history" id="round-history"></div>
+
+      <div class="explain-box">
+        <p class="explain-title">Win condition logic</p>
+        <p class="explain-text">
+          The choices array: <code>["rock", "paper", "scissors"]</code><br/>
+          CPU choice: <code>choices[Math.floor(Math.random() * 3)]</code><br/><br/>
+          Win/lose/draw uses nested if/else to compare player vs CPU choice.
+          Nine possible combinations — three wins, three losses, three draws.
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

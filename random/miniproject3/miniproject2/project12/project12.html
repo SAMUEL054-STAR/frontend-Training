@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project 12 - Age Calculator</title>
+
+    <link rel="stylesheet" href="project12.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <p class="project">PROJECT 12</p>
+
+        <h1>Age Calculator</h1>
+
+        <p class="description">
+            Enter your birth year. JavaScript calculates your age and
+            other facts about your life in numbers.
+        </p>
+
+        <div class="birthYear">BIRTH YEAR</div>
+
+        <input class="birthYear" type="number"  placeholder="Enter your birthYear">
+
+        <button class="calculate">
+            Calculate My Age
+        </button>
+
+
+
+        <div class="boxes">
+
+            <div class="box">
+                <h2 class="age">0</h2>
+                <p>YEARS OLD</p>
+            </div>
+
+            <div class="box">
+                <h2 class="months">0</h2>
+                <p>MONTHS LIVED</p>
+            </div>
+
+            <div class="box">
+                <h2 class="days">0</h2>
+                <p>DAYS LIVED</p>
+            </div>
+
+            <div class="box">
+                <h2 class="years">0</h2>
+                <p>YEARS TO 100</p>
+            </div>
+
+        </div>
+
+
+
+        <div class="message">
+            Your age will appear here.
+        </div>
+
+
+        
+
+        <div class="concepts">
+
+            <h3>NEW CONCEPTS IN THIS PROJECT</h3>
+
+            <p>
+                <code>parseInt(value)</code>
+                — converts a string to a whole number
+            </p>
+
+            <p>
+                <code>new Date().getFullYear()</code>
+                — the current year as a number
+            </p>
+
+            <p>
+                <code>currentYear - birthYear</code>
+                — simple subtraction gives age
+            </p>
+
+            <p>
+                Always validate number inputs — check they are not
+                NaN and within a sensible range.
+            </p>
+
+        </div>
+
+
+        <div class="concepts">
+
+            <h2>KEY CONCEPTS</h2>
+
+            <p>
+                <b>parseFloat()</b> —
+                converts string to decimal number
+                (e.g. "50.5" → 50.5)
+            </p>
+
+            <p>
+                <b>.toFixed(2)</b> —
+                rounds to 2 decimal places for money display
+            </p>
+
+            <p>
+                Tip amount = bill × (tipPercent / 100)
+            </p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

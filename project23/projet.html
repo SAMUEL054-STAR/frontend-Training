@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Project 22 — Word Counter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- =====================================================
+         PROJECT 22 — WORD COUNTER (TIER 2 CAPSTONE)
+         CONCEPT: String methods + live analysis + DOM
+         =====================================================
+         WHAT STUDENTS LEARN:
+         - string.split() to break text into arrays
+         - string.trim() to clean input
+         - Combining multiple string operations
+         - Real-time text analysis
+         - This is the Tier 2 capstone — it uses nearly
+           every concept from both Tier 1 and Tier 2
+    ===================================================== -->
+    <div class="card">
+      <span class="project-label">Project 22 — Capstone</span>
+      <h1 class="title">Word Counter</h1>
+      <p class="subtitle">
+        Type or paste any text. JavaScript analyses it live —
+        counting words, sentences, paragraphs, and more.
+      </p>
+
+      <div class="textarea-wrapper">
+        <textarea
+          id="text-area"
+          class="text-area"
+          placeholder="Type or paste your text here..."
+          rows="6"
+        ></textarea>
+        <div class="toolbar">
+          <button id="clear-btn"  class="tool-btn">Clear</button>
+          <button id="upper-btn"  class="tool-btn">UPPER</button>
+          <button id="lower-btn"  class="tool-btn">lower</button>
+          <button id="sample-btn" class="tool-btn">Load Sample</button>
+        </div>
+      </div>
+
+      <!-- Stats grid -->
+      <div id="stats-grid" class="stats-grid">
+        <div class="stat-card"><p id="s-words"      class="stat-num">0</p><p class="stat-label">Words</p></div>
+        <div class="stat-card"><p id="s-chars"      class="stat-num">0</p><p class="stat-label">Characters</p></div>
+        <div class="stat-card"><p id="s-chars-ns"   class="stat-num">0</p><p class="stat-label">Chars (no spaces)</p></div>
+        <div class="stat-card"><p id="s-sentences"  class="stat-num">0</p><p class="stat-label">Sentences</p></div>
+        <div class="stat-card"><p id="s-paragraphs" class="stat-num">0</p><p class="stat-label">Paragraphs</p></div>
+        <div class="stat-card"><p id="s-read"       class="stat-num">0s</p><p class="stat-label">Read Time</p></div>
+        <div class="stat-card"><p id="s-speak"      class="stat-num">0s</p><p class="stat-label">Speak Time</p></div>
+        <div class="stat-card"><p id="s-avg-word"   class="stat-num">0</p><p class="stat-label">Avg Word Length</p></div>
+      </div>
+
+      <!-- Most common words -->
+      <div class="section-title">Most Common Words</div>
+      <div id="common-words" class="common-words">
+        <p class="empty-msg">Type something to see word frequency...</p>
+      </div>
+
+      <div class="explain-box">
+        <p class="explain-title">Tier 2 complete — what you now know</p>
+        <p class="explain-text">
+          ✅ <code>input.value</code> — read user input<br/>
+          ✅ <code>parseInt / parseFloat</code> — convert to numbers<br/>
+          ✅ <code>isNaN()</code> — validate numbers<br/>
+          ✅ <code>if/else</code> — logic on user input<br/>
+          ✅ <code>.toFixed()</code> — format decimals<br/>
+          ✅ <code>new Date()</code> — date objects<br/>
+          ✅ <code>string.split()</code> — break text into arrays<br/>
+          ✅ Multiple inputs + formulas → results on screen
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

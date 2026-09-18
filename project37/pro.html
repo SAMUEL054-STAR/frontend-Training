@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Project 37 — Favourite Movies</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- PROJECT 37 — FAVOURITE MOVIES LIST
+         CONCEPT: Star rating system + sort + search filter
+         WHAT STUDENTS LEARN:
+         - Building a star rating UI with a loop
+         - Sorting an array of objects by a property
+         - Live search filter using string.includes()
+         - Rendering rich cards from object data
+    -->
+    <div class="card">
+      <span class="project-label">Project 37</span>
+      <h1 class="title">My Movie List</h1>
+      <p class="subtitle">Add movies with a rating and genre. Sort, filter, and search your collection.</p>
+
+      <!-- Add form -->
+      <div class="add-section">
+        <div class="form-row">
+          <input type="text" id="movie-title" class="text-input" placeholder="Movie title..." />
+          <select id="movie-genre" class="select-input">
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="horror">Horror</option>
+            <option value="sci-fi">Sci-Fi</option>
+            <option value="romance">Romance</option>
+            <option value="animation">Animation</option>
+            <option value="thriller">Thriller</option>
+          </select>
+        </div>
+        <div class="rating-row">
+          <span class="rating-label">Your Rating:</span>
+          <div id="star-picker" class="star-picker">
+            <span class="star" data-val="1">★</span>
+            <span class="star" data-val="2">★</span>
+            <span class="star" data-val="3">★</span>
+            <span class="star" data-val="4">★</span>
+            <span class="star" data-val="5">★</span>
+          </div>
+          <span id="rating-val" class="rating-val">0 / 5</span>
+        </div>
+        <input type="number" id="movie-year" class="text-input" placeholder="Year (e.g. 2023)" min="1900" max="2030"/>
+        <button id="add-btn" class="btn">Add Movie</button>
+      </div>
+
+      <!-- Search + Sort -->
+      <div class="controls-row">
+        <input type="text" id="search-input" class="text-input" placeholder="🔍 Search movies..."/>
+        <select id="sort-select" class="select-input">
+          <option value="newest">Newest First</option>
+          <option value="oldest">Oldest First</option>
+          <option value="rating-high">Highest Rated</option>
+          <option value="rating-low">Lowest Rated</option>
+          <option value="az">A → Z</option>
+        </select>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-row">
+        <span id="movie-count" class="stat-pill">0 movies</span>
+        <span id="avg-rating"  class="stat-pill">Avg: —</span>
+      </div>
+
+      <!-- Movie list -->
+      <div id="movie-list" class="movie-list">
+        <p class="empty-msg">Add your first movie above!</p>
+      </div>
+
+      <div class="explain-box">
+        <p class="explain-title">Sort and search patterns</p>
+        <p class="explain-text">
+          <strong>Sort:</strong> <code>array.sort((a, b) => b.rating - a.rating)</code> — sorts by rating descending.<br/><br/>
+          <strong>Search:</strong> <code>array.filter(m => m.title.toLowerCase().includes(query))</code><br/><br/>
+          Both return a NEW array — the original is unchanged. We render the new array.
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

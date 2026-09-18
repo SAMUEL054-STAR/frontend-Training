@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Layout</title>
+  </head>
+  <body>
+
+    <!-- HEADER: sits at the top — logo, site name, nav usually go here -->
+    <header>
+      <h1>Amara's Portfolio</h1>
+
+      <!-- NAV: contains the main navigation links -->
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN: the primary content of the page. Only one per page. -->
+    <main>
+
+      <!-- SECTION: a themed chunk of the page -->
+      <section id="about">
+        <h2>About me</h2>
+        <p>Hi! I'm Amara, a frontend developer learning HTML and CSS.</p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <!-- ARTICLE: self-contained content. Each project card is its own article. -->
+        <article>
+          <h3>Bio page</h3>
+          <p>My first HTML and CSS project — a personal bio page built from scratch.</p>
+        </article>
+
+        <article>
+          <h3>Recipe page</h3>
+          <p>A page listing my favourite recipes with images and instructions.</p>
+        </article>
+
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email me at <a href="mailto:amara@example.com">amara@example.com</a></p>
+      </section>
+
+    </main>
+
+    <!-- FOOTER: sits at the bottom — copyright, social links, etc. -->
+    <footer>
+      <p>&copy; 2026 Amara. All rights reserved.</p>
+    </footer>
+
+    <!-- PRACTICE TASK:
+      Replace "Amara" with your own name and:
+      1. Add a fourth section called "Skills" between About and Projects
+      2. Inside Skills, add an unordered list of 3 skills you have or want to learn
+      3. Add a second article inside the Projects section for any project (real or made up)
+      4. In the footer, add a link to your GitHub or any social profile
+    -->
+
+  </body>
+</html>

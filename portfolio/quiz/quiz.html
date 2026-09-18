@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Project 32 — Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- PROJECT 32 — MULTI-QUESTION QUIZ APP
+         CONCEPT: Array of question objects + scoring + progress
+         WHAT STUDENTS LEARN:
+         - Array of objects with question, options, answer
+         - Tracking current question index
+         - Rendering one question at a time
+         - Score calculation and percentage
+         - Results screen at the end
+    -->
+    <div class="card">
+      <span class="project-label">Project 32</span>
+      <h1 class="title">Quiz App</h1>
+
+      <!-- Progress -->
+      <div id="progress-area" class="progress-area hidden">
+        <div class="prog-row">
+          <span id="q-num" class="q-num">Question 1 of 10</span>
+          <span id="q-score" class="q-score">Score: 0</span>
+        </div>
+        <div class="prog-track"><div id="prog-bar" class="prog-bar"></div></div>
+      </div>
+
+      <!-- Question display -->
+      <div id="question-area" class="question-area">
+        <p id="question-text" class="question-text">Press Start to begin the quiz!</p>
+        <div id="options-grid" class="options-grid"></div>
+        <p id="q-feedback" class="q-feedback"></p>
+      </div>
+
+      <!-- Next / Start -->
+      <button id="start-btn" class="btn btn-start">Start Quiz 🎯</button>
+      <button id="next-btn"  class="btn hidden">Next Question →</button>
+
+      <!-- Results screen -->
+      <div id="results-screen" class="results-screen hidden">
+        <p class="results-title">Quiz Complete!</p>
+        <p id="results-score"   class="results-score"></p>
+        <p id="results-msg"     class="results-msg"></p>
+        <div id="results-breakdown" class="results-breakdown"></div>
+        <button id="retry-btn" class="btn">Try Again 🔄</button>
+      </div>
+
+      <div class="explain-box">
+        <p class="explain-title">Quiz data structure</p>
+        <p class="explain-text">
+          Each question is an object:<br/>
+          <code>{ question: "...", options: ["A","B","C","D"], answer: "A" }</code><br/><br/>
+          We track <code>currentIndex</code> to know which question to show.
+          Incrementing it moves to the next. When it equals the array length, the quiz ends.
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

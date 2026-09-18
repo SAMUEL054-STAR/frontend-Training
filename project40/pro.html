@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palette Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <span class="project">PROJECT 42</span>
+
+    <h1>Palette Builder</h1>
+
+    <p class="description">
+      Build your own color palette. Name each color, copy hex codes, and export
+      as CSS variables.
+    </p>
+
+    <div class="input-area">
+
+      <input type="color" value="#4f8df7">
+
+      <input
+        type="text"
+        placeholder="Color name (e.g. Primary Blue)"
+      >
+
+      <button>Add</button>
+
+    </div>
+
+    <div class="presets">
+      <span>Presets:</span>
+
+      <button>🌊 Ocean</button>
+      <button>🌅 Sunset</button>
+      <button>🌿 Forest</button>
+      <button>◼ Mono</button>
+    </div>
+
+    <div class="palette">
+
+      <div class="card">
+        <div class="color ocean1"></div>
+        <div class="card-info">
+          <h3>Deep Ocean</h3>
+          <p>#0077B6</p>
+          <div>
+            <button>Copy</button>
+            <button>Del</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="color ocean2"></div>
+        <div class="card-info">
+          <h3>Sky Blue</h3>
+          <p>#00B4D8</p>
+          <div>
+            <button>Copy</button>
+            <button>Del</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="color ocean3"></div>
+        <div class="card-info">
+          <h3>Light Blue</h3>
+          <p>#90E0EF</p>
+          <div>
+            <button>Copy</button>
+            <button>Del</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="color ocean4"></div>
+        <div class="card-info">
+          <h3>Pale Blue</h3>
+          <p>#CAF0F8</p>
+          <div>
+            <button>Copy</button>
+            <button>Del</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="color ocean5"></div>
+        <div class="card-info">
+          <h3>Navy</h3>
+          <p>#023E8A</p>
+          <div>
+            <button>Copy</button>
+            <button>Del</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bottom">
+      <button>Export as CSS Variables</button>
+      <button>Clear All</button>
+    </div>
+
+  </div>
+<script src="script.js"></script>
+</body>
+</html>

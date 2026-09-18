@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Project 38 — Name List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="card">
+    <span class="project-label">PROJECT 38</span>
+    <h1 class="title">Name List</h1>
+    <p class="subtitle">
+      Add names, delete individually or in bulk. Each item has its own
+      delete button. Undo your last delete!
+    </p>
+    <div class="add-row">
+      <input
+        type="text"
+        id="name-input"
+        class="text-input"
+        placeholder="Add a name..."
+        maxlength="80"
+      >
+      <button id="add-btn" class="btn">
+        Add
+      </button>
+    </div>
+    <div class="filter-tabs">
+      <label class="select-all">
+        <input type="checkbox" id="select-all">
+        <span>Select All</span>
+      </label>
+      <button id="delete-selected" class="delete-select">
+        Delete Selected
+      </button>
+      <button id="undo-btn" class="undo-btn">
+        Undo
+      </button>
+    </div>
+    <div class="summary-bar">
+      <p id="number" class="summary-text">
+        0 names — 0 selected
+      </p>
+    </div>
+    <ul id="name-list" class="name-list">
+      <p class="empty-msg">
+        Add names to get started
+      </p>
+    </ul>
+
+    <div class="explain-box">
+      <p class="explain-title">
+        UNDO DELETE PATTERN
+      </p>
+
+      <p class="explain-text">
+        When an item is deleted, instead of losing it forever,
+        we store it in a <code>lastDeleted</code> variable.
+        If the user clicks Undo, we add it back to the array.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

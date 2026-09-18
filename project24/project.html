@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Project 23 — Guess the Number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- =====================================================
+         PROJECT 23 — GUESS THE NUMBER
+         CONCEPT: Math.random + game state + win/lose logic
+         =====================================================
+
+         WHAT STUDENTS LEARN:
+         - Math.random() generates a random decimal 0–1
+         - Math.floor() rounds DOWN to a whole number
+         - Combined: Math.floor(Math.random() * 100) + 1
+           gives a random whole number 1–100
+         - Game STATE — variables that track the situation
+         - Win/lose conditions with if/else
+         - Attempt counter
+         - How to RESET a game back to the start
+
+         THIS IS THE MOST IMPORTANT TIER 3 PROJECT.
+         It uses: variables, if/else, input.value,
+         DOM updates, functions — all together.
+         Spend the most time here.
+    ===================================================== -->
+
+    <div class="card">
+      <span class="project-label">Project 23</span>
+      <h1 class="title">Guess the Number</h1>
+      <p class="subtitle">
+        I am thinking of a number between 1 and 100.
+        Can you guess it? JavaScript generated it randomly.
+      </p>
+
+      <!-- Game area -->
+      <div class="game-area">
+
+        <!-- Attempt counter -->
+        <div class="attempt-row">
+          <span class="attempt-label">Attempts</span>
+          <span id="attempt-count" class="attempt-num">0</span>
+          <span class="attempt-label">/ 10</span>
+        </div>
+
+        <!-- Attempt bar -->
+        <div class="attempt-track">
+          <div id="attempt-bar" class="attempt-bar"></div>
+        </div>
+
+        <!-- Feedback message -->
+        <div id="feedback-box" class="feedback-box">
+          <p id="feedback-icon" class="feedback-icon">🎯</p>
+          <p id="feedback-msg"  class="feedback-msg">Make your first guess!</p>
+        </div>
+
+        <!-- Previous guesses -->
+        <div class="guesses-section">
+          <p class="guesses-label">Previous guesses</p>
+          <div id="guesses-list" class="guesses-list">
+            <p id="no-guesses" class="no-guesses">None yet</p>
+          </div>
+        </div>
+
+        <!-- Input -->
+        <div id="input-area" class="input-area">
+          <input
+            type="number"
+            id="guess-input"
+            class="guess-input"
+            placeholder="Enter 1–100"
+            min="1"
+            max="100"
+          />
+          <button id="guess-btn" class="btn">Guess!</button>
+        </div>
+
+        <!-- Reset -->
+        <button id="reset-btn" class="btn btn-ghost">New Game 🔄</button>
+
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-row">
+        <div class="stat"><span id="s-games"  class="stat-num">0</span><span class="stat-label">Games</span></div>
+        <div class="stat"><span id="s-wins"   class="stat-num">0</span><span class="stat-label">Wins</span></div>
+        <div class="stat"><span id="s-best"   class="stat-num">—</span><span class="stat-label">Best</span></div>
+        <div class="stat"><span id="s-streak" class="stat-num">0</span><span class="stat-label">Streak</span></div>
+      </div>
+
+      <div class="explain-box">
+        <p class="explain-title">How Math.random() works</p>
+        <p class="explain-text">
+          <code>Math.random()</code> → a decimal: 0.0 to 0.999...<br/>
+          <code>Math.random() * 100</code> → 0.0 to 99.9...<br/>
+          <code>Math.floor(...)</code> → rounds DOWN: 0 to 99<br/>
+          <code>Math.floor(Math.random() * 100) + 1</code> → 1 to 100 ✅<br/><br/>
+          The <code>+ 1</code> shifts the range so it starts at 1, not 0.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

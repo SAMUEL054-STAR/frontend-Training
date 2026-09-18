@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Project 29 — Random Quote Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- PROJECT 29 — RANDOM QUOTE GENERATOR
+         CONCEPT: Array of objects + random index + DOM update
+         WHAT STUDENTS LEARN:
+         - An array of OBJECTS (each with multiple properties)
+         - Accessing object properties: quote.text, quote.author
+         - Picking a random object from an array
+         - Favourite list — filtering and storing
+    -->
+    <div class="card">
+      <span class="project-label">Project 29</span>
+      <h1 class="title">Quote Generator</h1>
+      <p class="subtitle">Generates a random quote from an array of objects. Each object has a text and author property.</p>
+
+      <!-- Quote display -->
+      <div id="quote-box" class="quote-box">
+        <p class="quote-mark">"</p>
+        <p id="quote-text"   class="quote-text">Click the button to get your first quote.</p>
+        <p id="quote-author" class="quote-author">— Author</p>
+        <span id="quote-category" class="quote-category"></span>
+      </div>
+
+      <!-- Buttons -->
+      <div class="btn-row">
+        <button id="new-quote-btn"  class="btn">New Quote 🎲</button>
+        <button id="favourite-btn"  class="btn btn-ghost">Save ❤️</button>
+        <button id="copy-btn"       class="btn btn-ghost">Copy</button>
+        
+      </div>
+
+      <p id="status-msg" class="status-msg hidden"></p>
+
+      <!-- Favourites -->
+      <div class="favs-section">
+        <div class="favs-header">
+          <span class="favs-title">Saved Quotes (<span id="fav-count">0</span>)</span>
+          <button id="clear-favs" class="btn-sm">Clear</button>
+        </div>
+        <div id="favs-list" class="favs-list">
+          <p class="favs-empty">Save quotes you like...</p>
+        </div>
+      </div>
+
+      <div class="explain-box">
+        <p class="explain-title">Array of objects</p>
+        <p class="explain-text">
+          Each quote is an <strong>object</strong> with properties:<br/>
+          <code>{ text: "...", author: "...", category: "..." }</code><br/><br/>
+          We pick one with a random index, then access its properties:<br/>
+          <code>quotes[randomIndex].text</code><br/>
+          <code>quotes[randomIndex].author</code>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+    <title>Project 49 - Password Strength</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="tag">PROJECT 49</div>
+
+    <h1>Password Strength</h1>
+
+    <p class="intro">
+        Type a password and see its strength scored in real time across multiple security criteria.
+    </p>
+
+    <div class="password-box">
+        <input type="password" id="password" placeholder="Type your password...">
+        <button id="toggle-password"></button>
+    </div>
+
+    <div class="strength-area">
+        <div class="bars">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <p id="strength-text">-</p>
+    </div>
+
+    <div class="rules">
+
+        <div class="rule">
+            <span>○</span>
+            <p>At least 8 characters</p>
+        </div>
+
+        <div class="rule">
+            <span>○</span>
+            <p>Contains uppercase letter (A–Z)</p>
+        </div>
+
+        <div class="rule">
+            <span>○</span>
+            <p>Contains lowercase letter (a–z)</p>
+        </div>
+
+        <div class="rule">
+            <span>○</span>
+            <p>Contains a number (0–9)</p>
+        </div>
+
+        <div class="rule">
+            <span>○</span>
+            <p>Contains a symbol (!@#$...)</p>
+        </div>
+
+        <div class="rule">
+            <span>○</span>
+            <p>12+ characters (extra strong)</p>
+        </div>
+
+    </div>
+
+    <div class="score">
+        <span>Security Score:</span>
+
+        <div class="score-bar">
+            <div class="fill"></div>
+        </div>
+
+        <strong id="score-text">0 / 6</strong>
+    </div>
+
+    <div class="generator">
+
+        <h3>OR GENERATE A STRONG PASSWORD:</h3>
+
+        <div class="options">
+            <label><input type="checkbox" checked> Uppercase</label>
+            <label><input type="checkbox" checked> Lowercase</label>
+            <label><input type="checkbox" checked> Numbers</label>
+            <label><input type="checkbox" checked> Symbols</label>
+        </div>
+
+        <div class="generate-controls">
+            <input type="range" min="8" max="32" value="25">
+            <span>25 chars</span>
+        </div>
+
+        <div class="buttons">
+            <button id="generate-btn">Generate</button>
+            <button id="copy-btn">Copy</button>
+        </div>
+
+        <div class="generated-password">
+            <p id="generated-text">Your generated password will appear here.</p>
+        </div>
+
+    </div>
+
+    <div class="codes">
+
+        <h3>REGULAR EXPRESSIONS (REGEX)</h3>
+
+        <div class="code">
+            <code>/[A-Z]/.test(str)</code>
+            <p>true if str contains any uppercase letter</p>
+        </div>
+
+        <div class="code">
+            <code>/[0-9]/.test(str)</code>
+            <p>true if str contains any digit</p>
+        </div>
+
+        <div class="code">
+            <code>/[^a-zA-Z0-9]/.test(str)</code>
+            <p>true if str contains a symbol</p>
+        </div>
+
+        <p class="note">
+            A regex is a pattern between two slashes. <code>/.test()</code> returns true or false.
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

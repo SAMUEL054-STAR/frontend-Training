@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Project 21 — Even & Odd Checker</title>
+    <link rel="stylesheet" href="project20.css" />
+  </head>
+  <body>
+    <!-- =====================================================
+         PROJECT 21 — EVEN & ODD CHECKER (ON THE PAGE)
+         CONCEPT: Modulo operator + live display + history
+         =====================================================
+         WHAT STUDENTS LEARN:
+         - % (modulo) operator — remainder after division
+         - Live checking on the "input" event
+         - Building a history of checked numbers using an array
+         - Rendering array contents to the page with a loop
+         - Divisibility checks (divisible by 3, 5, etc.)
+         This project revisits Week 2 concepts but now
+         displays everything on the PAGE not the console.
+    ===================================================== -->
+    <div class="card">
+      <span class="project-label">Project 21</span>
+      <h1 class="title">Even & Odd Checker</h1>
+      <p class="subtitle">
+        Type any number. JavaScript checks it instantly using the
+        modulo operator — the same logic from Week 2, now on screen.
+      </p>
+
+      <div class="input-section">
+        <label class="input-label">Enter a Number</label>
+        <input type="number" id="num-input" class="text-input" placeholder="e.g. 42" style="font-size: 24px; text-align:center;"/>
+      </div>
+
+      <!-- Live result -->
+      <div id="result-box" class="result-box hidden">
+        <div id="result-icon"   class="result-icon"></div>
+        <p   id="result-label"  class="result-label"></p>
+        <div id="fact-tags"     class="fact-tags"></div>
+      </div>
+
+      <!-- Modulo visualiser -->
+      <div id="modulo-viz" class="modulo-viz hidden">
+        <p class="viz-title">How the modulo works</p>
+        <p id="viz-text" class="viz-text"></p>
+        <div id="dot-row" class="dot-row"></div>
+      </div>
+
+      <!-- History -->
+      <div class="history-section">
+        <div class="history-header">
+          <span class="history-title">History</span>
+          <button id="clear-btn" class="btn-clear">Clear</button>
+        </div>
+        <div id="history-list" class="history-list">
+          <p class="history-empty">Numbers you check will appear here...</p>
+        </div>
+      </div>
+
+      <div class="explain-box">
+        <p class="explain-title">The modulo operator %</p>
+        <p class="explain-text">
+          <code>number % 2</code> gives the <strong>remainder</strong> when dividing by 2.<br/><br/>
+          10 ÷ 2 = 5, remainder <strong>0</strong> → Even<br/>
+          7  ÷ 2 = 3, remainder <strong>1</strong> → Odd<br/><br/>
+          Same idea for other divisors:
+          <code>n % 3 === 0</code> means divisible by 3.
+        </p>
+      </div>
+    </div>
+    <script src="project20.js"></script>
+  </body>
+</html>

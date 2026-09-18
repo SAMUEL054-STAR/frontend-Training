@@ -1,0 +1,125 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+.header {
+  width: 100%;
+  height: 400px;
+  background-color: whitesmoke;
+  text-align: center;
+  padding-top: 30px;
+}
+.ios-button {
+  width: 200px;
+  height: 55px;
+  background-color: green;
+  color: white;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.mac-button {
+  width: 200px;
+  height: 55px;
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+  font-size: 18px;
+}
+.buttons-container {
+  gap: 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+.text {
+    font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.luck{
+    display: flex;
+    gap: 100px;
+}
+.image-computer.png {
+  display: flex;
+  
+
+
+}
+
+.second-main-section {
+  text-align: center;
+}
+.third-main-section {
+  text-align: center;
+}
+.wrapper {
+  text-align: center;
+}
+.buttons-container button {
+  width: 200px;
+  height: 55px;
+  background-color: green;
+  color: white;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.buttons button {
+  width: 200px;
+  height: 55px;
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: beige;
+  padding: 50px;
+  display: flex;
+}
+.footer .wrapper {
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  text-align: left;
+}
+.footer-links img {
+  width: 55px;
+}
+.footer-links div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-links a:hover {
+  color: forestgreen;
+}
+.socials {
+  display: flex;
+  gap: 15px;
+}
+.socials img {
+  width: 55px;
+}

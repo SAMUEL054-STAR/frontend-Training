@@ -1,0 +1,107 @@
+body {
+    background: black;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container {
+    width: 500px;
+    max-width: 100%;
+    padding: 30px;
+    background: rgb(8, 8, 110);
+    border-radius: 15px;
+}
+
+.project {
+     color: green;
+    font-weight: bold;
+    width: 100px;
+    height: 20px;
+    background-color: navy;
+    text-align: center;
+    border-radius: 15px;
+    border: 5px solid green;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+p {
+    color: gray;
+}
+
+.Amount {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: gray;
+    font-weight: bold;
+}
+
+.bill {
+    width: 90%;
+    padding: 15px;
+    background: black;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.tips {
+    display: flex;
+    gap: 10px;
+}
+
+.tip {
+    padding: 18px ;
+    background: black;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.people {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.people button {
+    padding: 12px 18px;
+    background: black;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.number {
+    font-size: 22px;
+}
+
+.calculate {
+    width: 100%;
+    margin-top: 30px;
+    padding: 16px;
+    background: blueviolet;
+    color: black;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.result {
+    margin-top: 25px;
+    padding: 20px;
+    background: black;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+code{
+    background-color: black;
+    color: lawngreen;
+}

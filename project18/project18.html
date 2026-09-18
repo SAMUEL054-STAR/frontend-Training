@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Interest calculator</title>
+    <link rel="stylesheet" href="project18.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p class="project">PROJECT18</p>
+      <h1>Interest Calculator</h1>
+      <p class="text">
+        Enter a principal interest rate, and time period.Javascript calculates
+        both simples and compounds interest.
+      </p>
+      <div class="cal">
+        <label>PRINCIPAL (₦)</label>
+        <input type="number" class="principal" />
+        <label>RATE (% PER YEAR) </label>
+        <input type="number" class="rate" />
+        <label>TIME (YEARS)</label>
+        <input type="number" class="time" />
+      </div>
+      <button class="calculate">calculate Interest</button>
+      <div class="result">
+        <div class="tabs">
+          <button class="simple">Simple Interest</button>
+          <button class="Compound">Compound Interest</button>
+        </div>
+        <div class="details">
+          <div class="row">
+            <p>principal</p>
+            <p class="principalResult">₦0.00</p>
+          </div>
+          <div class="row">
+            <p>Interest Earned</p>
+            <p class="interestResult">₦7.80</p>
+          </div>
+          <div class="row">
+            <p>Total Amount</p>
+            <p class="totalResult">₦33.80</p>
+          </div>
+        </div>
+        <div class="breakdown">
+          <div class="row">
+            <p>year1</p>
+            <p class="year1">₦0.00</p>
+          </div>
+            <div class="row">
+            <p>year2</p>
+            <p class="year2">₦0.00</p>
+          </div>
+        </div>
+      </div>
+       <div class="formula">
+        <h2>THE BMI FORMULA</h2>
+
+        <p>
+          <strong>Simple interest:</strong>
+          I = (P × R × T) / 100
+        </p>
+
+        <p>Total = P + I</p>
+
+        <p>
+          <strong>Compound interest:</strong>
+          A = P × (1 + R/100)T
+        </p>
+        <p>Math.pow(base, exponent) — raises base to the power of exponent</p>
+      </div>
+    </div>
+    <script src="project18.js"></script>
+  </body>
+</html>

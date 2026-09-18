@@ -1,0 +1,165 @@
+/* =====================================================
+   PROJECT 23 — GUESS THE NUMBER
+   style.css — Tier 3 base styles
+   ===================================================== */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  min-height: 100vh;
+  background-color: #0f0f1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  padding: 24px;
+}
+
+.card {
+  background-color: #1a1a2e;
+  border: 1px solid #2a2a45;
+  border-radius: 16px;
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 2px;
+  text-transform: uppercase; color: #cba6f7;
+  background-color: rgba(203,166,247,0.12);
+  border: 1px solid #cba6f7;
+  border-radius: 20px; padding: 4px 14px; width: fit-content;
+}
+
+.title    { font-size: 28px; font-weight: 700; color: #e8e8f0; letter-spacing: -0.5px; }
+.subtitle { font-size: 14px; color: #7a7a9a; line-height: 1.6; }
+
+/* ── GAME AREA ── */
+.game-area {
+  background-color: #0d0d1a;
+  border: 1px solid #2a2a45;
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Attempt counter */
+.attempt-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.attempt-label { font-size: 12px; color: #5a5a7a; text-transform: uppercase; letter-spacing: 1px; }
+.attempt-num   { font-size: 20px; font-weight: 700; color: #cba6f7; font-family: 'Courier New', monospace; }
+
+/* Attempt bar */
+.attempt-track {
+  height: 6px;
+  background-color: #1a1a2e;
+  border-radius: 99px;
+  overflow: hidden;
+}
+.attempt-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #cba6f7;
+  border-radius: 99px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+/* Feedback box */
+.feedback-box {
+  background-color: #1a1a2e;
+  border: 2px solid #2a2a45;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color 0.3s ease;
+  min-height: 90px;
+  justify-content: center;
+}
+.feedback-box.too-high { border-color: #f26b6b; }
+.feedback-box.too-low  { border-color: #4f8ef7; }
+.feedback-box.won      { border-color: #3ecfa0; background-color: rgba(62,207,160,0.06); }
+.feedback-box.lost     { border-color: #f26b6b; background-color: rgba(242,107,107,0.06); }
+
+.feedback-icon { font-size: 28px; }
+.feedback-msg  { font-size: 16px; font-weight: 600; color: #e8e8f0; line-height: 1.4; }
+
+/* Previous guesses */
+.guesses-section { display: flex; flex-direction: column; gap: 8px; }
+.guesses-label   { font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #3a3a5a; }
+.guesses-list    { display: flex; flex-wrap: wrap; gap: 8px; min-height: 30px; }
+.no-guesses      { font-size: 13px; color: #3a3a5a; font-style: italic; }
+
+.guess-chip {
+  font-size: 13px; font-weight: 700;
+  padding: 4px 12px; border-radius: 20px;
+  font-family: 'Courier New', monospace;
+}
+.chip-high { background-color: rgba(242,107,107,0.12); color: #f26b6b; border: 1px solid #f26b6b; }
+.chip-low  { background-color: rgba(79,142,247,0.12);  color: #4f8ef7; border: 1px solid #4f8ef7; }
+
+/* Input area */
+.input-area { display: flex; gap: 10px; }
+.guess-input {
+  flex: 1;
+  background-color: #1a1a2e; border: 2px solid #2a2a45;
+  border-radius: 10px; color: #e8e8f0;
+  font-family: inherit; font-size: 18px; font-weight: 700;
+  padding: 12px 16px; outline: none; text-align: center;
+  transition: border-color 0.2s;
+}
+.guess-input:focus { border-color: #cba6f7; }
+.guess-input::placeholder { color: #3a3a5a; font-size: 13px; font-weight: 400; }
+.guess-input:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* Buttons */
+.btn {
+  font-family: inherit; font-size: 14px; font-weight: 700;
+  padding: 12px 24px; border-radius: 10px; border: none;
+  background-color: #cba6f7; color: #000;
+  cursor: pointer; transition: opacity 0.2s, transform 0.1s;
+  white-space: nowrap;
+}
+.btn:hover  { opacity: 0.85; }
+.btn:active { transform: scale(0.97); }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+.btn-ghost {
+  background: transparent; color: #7a7a9a;
+  border: 1px solid #2a2a45;
+}
+.btn-ghost:hover { color: #e8e8f0; border-color: #4a4a6a; }
+
+/* Stats row */
+.stats-row {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.stat {
+  background-color: #0d0d1a; border: 1px solid #2a2a45;
+  border-radius: 10px; padding: 14px 10px;
+  text-align: center; display: flex; flex-direction: column; gap: 4px;
+}
+.stat-num   { font-size: 22px; font-weight: 700; color: #cba6f7; font-family: 'Courier New', monospace; }
+.stat-label { font-size: 10px; color: #5a5a7a; text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* Explain */
+.explain-box {
+  background-color: rgba(203,166,247,0.06);
+  border: 1px solid rgba(203,166,247,0.2);
+  border-radius: 10px; padding: 16px 18px;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.explain-title { font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #cba6f7; }
+.explain-text  { font-size: 13px; color: #7a7a9a; line-height: 1.9; }
+code { background-color: #0d0d1a; color: #cba6f7; padding: 2px 6px; border-radius: 4px; font-family: 'Courier New', monospace; font-size: 12px; }
