@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <title>KeyBank Dashboard</title>
+
+    <link rel="stylesheet" href="app.css" />
+  </head>
+
+  <body>
+    <div class="dashboard">
+      
+      <header>
+        <div class="logo">KEY</div>
+
+        <div>
+          <h2>KeyBank</h2>
+          <p>Welcome back!</p>
+        </div>
+
+        <button id="logout-btn">Logout</button>
+      </header>
+
+      
+      <div class="balance-card">
+        <p>Current Balance</p>
+        <h1 id="balance">₦0.00</h1>
+      </div>
+
+      
+      <div class="actions">
+        <div class="action-card">
+          <h3>Deposit Money</h3>
+
+          <input type="number" id="deposit-input" placeholder="Enter amount" />
+
+          <button id="deposit-btn">Deposit</button>
+        </div>
+
+        <div class="action-card">
+          <h3>Withdraw Money</h3>
+
+          <input type="number" id="withdraw-input" placeholder="Enter amount" />
+
+          <button id="withdraw-btn">Withdraw</button>
+        </div>
+      </div>
+
+      
+      <div class="transactions">
+        <h3>Transaction History</h3>
+
+        <div id="history-list">
+          <p id="empty-text">No transactions yet.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+ 
